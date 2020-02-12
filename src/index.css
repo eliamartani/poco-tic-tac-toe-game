@@ -1,0 +1,17 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+* {
+  font-family: 'Bebas Neue', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
