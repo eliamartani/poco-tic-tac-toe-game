@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1055f69b70c5155c94aa1514acd9ba86",
+    "revision": "14e9321a9c0948a58844477f1911192e",
     "url": "/poco-tic-tac-toe-game/index.html"
   },
   {
-    "revision": "9de14f5d01d5c78a1317",
+    "revision": "2e5a4a3ecf8761a8aa32",
     "url": "/poco-tic-tac-toe-game/static/css/main.becc935b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/poco-tic-tac-toe-game/static/js/2.2c50d84f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9de14f5d01d5c78a1317",
-    "url": "/poco-tic-tac-toe-game/static/js/main.0a1068e5.chunk.js"
+    "revision": "2e5a4a3ecf8761a8aa32",
+    "url": "/poco-tic-tac-toe-game/static/js/main.df42ac84.chunk.js"
   },
   {
     "revision": "8260baad1c9529375cf3",
