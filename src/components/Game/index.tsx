@@ -1,14 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import Board from '../Board';
 import * as S from './styled';
-
-interface GameProps {
-  restartGame: boolean;
-}
-
-interface History {
-  squares: string[];
-}
+import {History} from '../../shared/history';
+import {Square} from '../../shared/square';
+import {GameProps} from './props';
 
 const Game: React.FC<GameProps> = (props: GameProps) => {
   const [history, setHistory] = useState<History[]>([
@@ -18,7 +13,6 @@ const Game: React.FC<GameProps> = (props: GameProps) => {
   ]);
   const [stepNumber, setStepNumber] = useState(0);
   const [xIsNext, setXIsNext] = useState(true);
-
   const handleClick = (i: number) => {
     const _history = history.slice(0, stepNumber + 1);
     const current = _history[_history.length - 1];
@@ -30,19 +24,16 @@ const Game: React.FC<GameProps> = (props: GameProps) => {
 
     squares[i] = xIsNext ? 'X' : 'O';
 
-    updateState(
-      [
-        ..._history,
-        {
-          squares: squares,
-        },
-      ],
-      _history.length,
-      !xIsNext,
-    );
+    setHistory([
+      ..._history,
+      {
+        squares: squares,
+      },
+    ]);
+    setStepNumber(_history.length);
+    setXIsNext(!xIsNext);
   };
-
-  const calculateWinner = (squares: string[]) => {
+  const calculateWinner = (squares: Square[]) => {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -65,28 +56,14 @@ const Game: React.FC<GameProps> = (props: GameProps) => {
     }
     return null;
   };
-
-  const updateState = (history: History[], step: number, next: boolean) => {
-    setHistory(history);
-    setStepNumber(step);
-    setXIsNext(next);
-  };
-
-  useEffect(() => {
-    updateState(
-      [
-        {
-          squares: Array(9).fill(null),
-        },
-      ],
-      0,
-      true,
-    );
-  }, [props.restartGame]);
-
   const current = history[stepNumber];
   const winner = calculateWinner(current.squares);
   const displayModal = !!winner;
+
+  useEffect(() => {
+    setStepNumber(0);
+    setXIsNext(true);
+  }, [props.restartGame]);
 
   return (
     <S.Game>

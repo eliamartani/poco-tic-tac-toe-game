@@ -1,15 +1,15 @@
 import React from 'react';
 import * as S from './styled';
+import {MenuProps} from './props';
+import {MenuItem} from '../../shared/menu-item';
 
-interface MenuProps {
-  onClickRestart: () => void;
-}
-
-const Menu: React.FC<MenuProps> = (props: MenuProps) => {
-  return (
-    <S.Box>
-      <S.Button onClick={props.onClickRestart}>Restart</S.Button>
-    </S.Box>
-  );
-};
+const Menu: React.FC<MenuProps> = (props: MenuProps) => (
+  <S.Box>
+    {props.items.map((item: MenuItem, index: number) => (
+      <S.Button onClick={item.onClick} key={`menu_${index}`}>
+        {item.text}
+      </S.Button>
+    ))}
+  </S.Box>
+);
 export default Menu;

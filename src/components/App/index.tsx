@@ -1,19 +1,23 @@
 import React, {useState} from 'react';
 import Game from '../Game';
 import Menu from '../Menu';
+import {MenuItem} from '../../shared/menu-item';
 
 const App: React.FC = () => {
   const [restartGame, setRestartGame] = useState(false);
 
-  const handleClickRestart = () => {
-    setRestartGame(!restartGame);
-  };
+  const menuItems: MenuItem[] = [
+    {
+      onClick: () => setRestartGame(!restartGame),
+      text: 'Restart',
+    },
+  ];
 
   return (
-    <div className="App">
-      <Menu onClickRestart={handleClickRestart} />
+    <>
+      <Menu items={menuItems} />
       <Game restartGame={restartGame} />
-    </div>
+    </>
   );
 };
 

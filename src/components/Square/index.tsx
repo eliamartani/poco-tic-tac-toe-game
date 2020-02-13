@@ -1,14 +1,9 @@
 import React from 'react';
 import * as S from './styled';
-
-interface SquareProps {
-  onClick: () => void;
-  isX: boolean;
-  value: string;
-}
+import {SquareProps} from './props';
 
 const Square: React.FC<SquareProps> = (props: SquareProps) => (
-  <S.Button isX={props.isX} onClick={props.onClick}>
+  <S.Button odd={props.odd} onClick={props.onClick}>
     {props.value}
   </S.Button>
 );

@@ -1,13 +1,10 @@
 import styled from 'styled-components';
-
-interface ButtonProps {
-  isX: boolean;
-}
+import {SquareButton} from './props';
 
 export const Button = styled.button`
   background: #fff;
   border: 1px solid #ddd;
-  color: #${(props: ButtonProps) => (props.isX ? 'ff8360' : '3cdbd3')};
+  color: #${(props: SquareButton) => (props.odd ? 'ff8360' : '3cdbd3')};
   display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

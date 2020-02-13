@@ -1,17 +1,13 @@
 import React from 'react';
 import Square from '../Square';
 import * as S from './styled';
-
-interface BoardProps {
-  onClick: (index: number) => any;
-  squares: string[];
-}
+import {BoardProps} from './props';
 
 const Board: React.FC<BoardProps> = (props: BoardProps) => {
   const renderSquare = (i: number) => {
     return (
       <Square
-        isX={props.squares[i] === 'X'}
+        odd={props.squares[i] === 'X'}
         value={props.squares[i]}
         onClick={() => props.onClick(i)}
       />
