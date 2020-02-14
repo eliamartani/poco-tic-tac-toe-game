@@ -5,6 +5,7 @@ export interface SquareButton {
 }
 
 export interface SquareProps extends SquareButton {
+  label: string;
   onClick: () => void;
   value: Square;
 }

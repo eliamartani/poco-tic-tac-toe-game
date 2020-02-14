@@ -8,16 +8,17 @@ export const Box = styled.div`
 `;
 
 export const Button = styled.button`
-  background: #eee299;
-  border: 0;
-  color: #fff;
+  background: transparent;
+  border: 1px solid #6f6a47;
+  color: #6f6a47;
   font-size: 1.2rem;
   padding: 5px 15px;
   text-transform: uppercase;
-  transition: background 0.2s;
+  transition: border-color 0.2s, color 0.2s;
 
   &:hover {
-    background: #dcd18a;
+    border-color: #9c9668;
+    color: #9c9668;
   }
 
   @media (min-width: 768px) {

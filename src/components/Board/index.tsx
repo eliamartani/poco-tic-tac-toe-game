@@ -7,6 +7,7 @@ const Board: React.FC<BoardProps> = (props: BoardProps) => {
   const renderSquare = (i: number) => {
     return (
       <Square
+        label={`Square ${i + 1}`}
         odd={props.squares[i] === 'X'}
         value={props.squares[i]}
         onClick={() => props.onClick(i)}
