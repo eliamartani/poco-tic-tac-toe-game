@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/poco-tic-tac-toe-game/static/css/main.becc935b.chunk.css",
-    "main.js": "/poco-tic-tac-toe-game/static/js/main.df42ac84.chunk.js",
-    "main.js.map": "/poco-tic-tac-toe-game/static/js/main.df42ac84.chunk.js.map",
+    "main.js": "/poco-tic-tac-toe-game/static/js/main.d3dcc1d4.chunk.js",
+    "main.js.map": "/poco-tic-tac-toe-game/static/js/main.d3dcc1d4.chunk.js.map",
     "runtime-main.js": "/poco-tic-tac-toe-game/static/js/runtime-main.d9e363df.js",
     "runtime-main.js.map": "/poco-tic-tac-toe-game/static/js/runtime-main.d9e363df.js.map",
     "static/js/2.2c50d84f.chunk.js": "/poco-tic-tac-toe-game/static/js/2.2c50d84f.chunk.js",
     "static/js/2.2c50d84f.chunk.js.map": "/poco-tic-tac-toe-game/static/js/2.2c50d84f.chunk.js.map",
     "index.html": "/poco-tic-tac-toe-game/index.html",
-    "precache-manifest.a1501da83263dbe87db564102ff4273a.js": "/poco-tic-tac-toe-game/precache-manifest.a1501da83263dbe87db564102ff4273a.js",
+    "precache-manifest.396e85c0c50997594b8d061fe5360fc4.js": "/poco-tic-tac-toe-game/precache-manifest.396e85c0c50997594b8d061fe5360fc4.js",
     "service-worker.js": "/poco-tic-tac-toe-game/service-worker.js",
     "static/css/main.becc935b.chunk.css.map": "/poco-tic-tac-toe-game/static/css/main.becc935b.chunk.css.map",
     "static/js/2.2c50d84f.chunk.js.LICENSE.txt": "/poco-tic-tac-toe-game/static/js/2.2c50d84f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d9e363df.js",
     "static/js/2.2c50d84f.chunk.js",
     "static/css/main.becc935b.chunk.css",
-    "static/js/main.df42ac84.chunk.js"
+    "static/js/main.d3dcc1d4.chunk.js"
   ]
 }
